@@ -78,7 +78,7 @@
     "input-otp": "1.4.1",
     "knex": "latest",
     "kysely": "latest",
-    "lucide-react": "^0.454.0",
+    "lucide-react": "^0.485.0",
     "mysql2": "latest",
     "nanoid": "latest",
     "next": "15.1.0",
