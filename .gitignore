@@ -37,4 +37,3 @@ next-env.d.ts
 # database
 /drizzle/.env
 /drizzle/migrations
-
