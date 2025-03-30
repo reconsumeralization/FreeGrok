@@ -1,0 +1,12 @@
+.git
+node_modules
+.next
+.vercel
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+README.md
+drizzle/migrations
+
