@@ -216,8 +216,8 @@ importers:
         specifier: latest
         version: 0.27.6
       lucide-react:
-        specifier: ^0.454.0
-        version: 0.454.0(react@19.1.0)
+        specifier: ^0.485.0
+        version: 0.485.0(react@19.1.0)
       mysql2:
         specifier: latest
         version: 3.14.0
@@ -4911,10 +4911,10 @@ packages:
     resolution: {integrity: sha512-Nv9KddBcQSlQopmBHXSsZVY5xsdlZkdH/Iey0BlcBYggMd4two7cZnKOK9vmy3nY0O5RGH99z1PCeTpPqszUYg==}
     engines: {bun: '>=1.0.0', deno: '>=1.30.0', node: '>=8.0.0'}
 
-  lucide-react@0.454.0:
-    resolution: {integrity: sha512-hw7zMDwykCLnEzgncEEjHeA6+45aeEzRYuKHuyRSOPkhko+J3ySGjGIzu+mmMfDFG1vazHepMaYFYHbTFAZAAQ==}
+  lucide-react@0.485.0:
+    resolution: {integrity: sha512-NvyQJ0LKyyCxL23nPKESlr/jmz8r7fJO1bkuptSNYSy0s8VVj4ojhX0YAgmE1e0ewfxUZjIlZpvH+otfTnla8Q==}
     peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   make-dir@2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
@@ -12157,7 +12157,7 @@ snapshots:
 
   lru.min@1.1.2: {}
 
-  lucide-react@0.454.0(react@19.1.0):
+  lucide-react@0.485.0(react@19.1.0):
     dependencies:
       react: 19.1.0
 
