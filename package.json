@@ -64,7 +64,7 @@
     "bun-types": "latest",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "cmdk": "1.0.4",
+    "cmdk": "1.1.1",
     "crypto-js": "latest",
     "date-fns": "latest",
     "dotenv": "^16.4.7",
