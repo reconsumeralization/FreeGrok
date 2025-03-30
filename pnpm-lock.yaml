@@ -190,10 +190,10 @@ importers:
         version: 0.30.6
       drizzle-orm:
         specifier: latest
-        version: 0.41.0(706374cba077fc1b3ff687bc4008e732)
+        version: 0.41.0(y7ol3st4siuesxoy6xgcu2wy6e)
       drizzle-zod:
         specifier: latest
-        version: 0.7.1(drizzle-orm@0.41.0(706374cba077fc1b3ff687bc4008e732))(zod@3.24.2)
+        version: 0.7.1(drizzle-orm@0.41.0(y7ol3st4siuesxoy6xgcu2wy6e))(zod@3.24.2)
       embla-carousel-react:
         specifier: 8.5.1
         version: 8.5.1(react@19.1.0)
@@ -291,8 +291,8 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.17)
       vaul:
-        specifier: ^0.9.6
-        version: 0.9.9(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^1.1.2
+        version: 1.1.2(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       zod:
         specifier: latest
         version: 3.24.2
@@ -4784,6 +4784,7 @@ packages:
 
   libsql@0.5.3:
     resolution: {integrity: sha512-S3WR8WNCJV1VXraBFUKjDA6+8LcNDJMLm+83qohm1O3YM1iVqV2+/XN3SXOxpxVjuL4g/rLrjO5kzygkPefCFQ==}
+    cpu: [x64, arm64, wasm32]
     os: [darwin, linux, win32]
 
   lighthouse-logger@1.4.2:
@@ -6518,11 +6519,11 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
-  vaul@0.9.9:
-    resolution: {integrity: sha512-7afKg48srluhZwIkaU+lgGtFCUsYBSGOl8vcc8N/M3YQlZFlynHD15AE+pwrYdc826o7nrIND4lL9Y6b9WWZZQ==}
+  vaul@1.1.2:
+    resolution: {integrity: sha512-ZFkClGpWyI2WUQjdLJ/BaGuV6AVQiJ3uELGk3OYtP+B6yCO7Cmn9vPFXVJkRaGkOJu3m8bQMgtyzNHixULceQA==}
     peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0
-      react-dom: ^16.8 || ^17.0 || ^18.0
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc
 
   victory-vendor@36.9.2:
     resolution: {integrity: sha512-PnpQQMuxlwYdocC8fIJqVXvkeViHYzotI+NJrCuav0ZYFoq912ZHBk3mCeuj+5/VpodOjPe1z0Fk2ihgzlXqjQ==}
@@ -10982,7 +10983,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.41.0(706374cba077fc1b3ff687bc4008e732):
+  drizzle-orm@0.41.0(y7ol3st4siuesxoy6xgcu2wy6e):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.777.0
       '@cloudflare/workers-types': 4.20250327.0
@@ -11013,9 +11014,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.7.1(drizzle-orm@0.41.0(706374cba077fc1b3ff687bc4008e732))(zod@3.24.2):
+  drizzle-zod@0.7.1(drizzle-orm@0.41.0(y7ol3st4siuesxoy6xgcu2wy6e))(zod@3.24.2):
     dependencies:
-      drizzle-orm: 0.41.0(706374cba077fc1b3ff687bc4008e732)
+      drizzle-orm: 0.41.0(y7ol3st4siuesxoy6xgcu2wy6e)
       zod: 3.24.2
 
   dunder-proto@1.0.1:
@@ -13913,7 +13914,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vaul@0.9.9(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  vaul@1.1.2(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@radix-ui/react-dialog': 1.1.6(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
