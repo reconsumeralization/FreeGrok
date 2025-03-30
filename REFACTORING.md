@@ -33,6 +33,7 @@ The migration from Prisma to Drizzle involved the following steps:
 The most significant change was in how we define our database schema. We now use a TypeScript-native approach with Drizzle:
 
 **Drizzle Schema Example:**
+
 ```typescript
 import { pgTable, text, timestamp, boolean, varchar } from 'drizzle-orm/pg-core';
 import { createId } from '@paralleldrive/cuid2';

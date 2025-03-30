@@ -32,6 +32,7 @@ A professional networking platform for businesses and professionals to connect, 
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/b2b-network.git
 cd b2b-network

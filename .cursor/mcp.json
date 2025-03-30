@@ -1,0 +1,55 @@
+{
+  "enabled": true,
+  "contextProviders": [
+    {
+      "name": "supabase-docs",
+      "provider": "web",
+      "config": {
+        "url": "https://supabase.com/docs"
+      }
+    },
+    {
+      "name": "drizzle-docs",
+      "provider": "web",
+      "config": {
+        "url": "https://orm.drizzle.team/docs/overview"
+      }
+    },
+    {
+      "name": "next-docs",
+      "provider": "web",
+      "config": {
+        "url": "https://nextjs.org/docs"
+      }
+    },
+    {
+      "name": "auth-docs",
+      "provider": "web",
+      "config": {
+        "url": "https://authjs.dev/reference/nextjs"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "name": "supabase-context",
+      "pattern": ["**/*.{ts,tsx,js,jsx}", "app/**/*"],
+      "context": ["supabase-docs"]
+    },
+    {
+      "name": "drizzle-context",
+      "pattern": ["db/**/*", "drizzle/**/*", "**/*.{ts,tsx,js,jsx}"],
+      "context": ["drizzle-docs"]
+    },
+    {
+      "name": "next-auth-context",
+      "pattern": ["app/api/auth/**/*", "middleware.ts", "**/*.{ts,tsx,js,jsx}"],
+      "context": ["auth-docs", "next-docs"]
+    },
+    {
+      "name": "next-context",
+      "pattern": ["app/**/*", "components/**/*", "**/*.{ts,tsx,js,jsx}"],
+      "context": ["next-docs"]
+    }
+  ]
+}

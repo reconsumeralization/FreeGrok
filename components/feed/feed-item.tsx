@@ -1,13 +1,13 @@
-"use client"
+'use client'
 
-import { Label } from "@/components/ui/label"
+import { Label } from '@/components/ui/label'
 
-import { useState } from "react"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Textarea } from "@/components/ui/textarea"
-import { Badge } from "@/components/ui/badge"
+import { useState } from 'react'
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Textarea } from '@/components/ui/textarea'
+import { Badge } from '@/components/ui/badge'
 import {
   MessageSquare,
   Share,
@@ -23,14 +23,14 @@ import {
   Tag,
   Eye,
   BarChart2,
-} from "lucide-react"
+} from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from '@/components/ui/dropdown-menu'
 import {
   Dialog,
   DialogContent,
@@ -38,16 +38,21 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import { useFeed } from "@/contexts/feed-context"
-import { type FeedItem, ContentType } from "@/lib/services/feed-service"
-import { reportContent } from "@/lib/services/moderation-service"
-import { useUser } from "@/contexts/user-context"
-import { useToast } from "@/components/ui/use-toast"
-import { formatDistanceToNow } from "date-fns"
-import Image from "next/image"
-import Link from "next/link"
+} from '@/components/ui/dialog'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip'
+import { useFeed } from '@/contexts/feed-context'
+import { type FeedItem, ContentType } from '@/lib/services/feed-service'
+import { reportContent } from '@/lib/services/moderation-service'
+import { useUser } from '@/contexts/user-context'
+import { useToast } from '@/components/ui/use-toast'
+import { formatDistanceToNow } from 'date-fns'
+import Image from 'next/image'
+import Link from 'next/link'
 
 interface FeedItemProps {
   item: FeedItem
@@ -58,13 +63,15 @@ export function FeedItemCard({ item }: FeedItemProps) {
   const { user } = useUser()
   const { toast } = useToast()
   const [isCommenting, setIsCommenting] = useState(false)
-  const [commentText, setCommentText] = useState("")
+  const [commentText, setCommentText] = useState('')
   const [isSharingDialogOpen, setIsSharingDialogOpen] = useState(false)
-  const [shareText, setShareText] = useState("")
+  const [shareText, setShareText] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isReportDialogOpen, setIsReportDialogOpen] = useState(false)
-  const [reportReason, setReportReason] = useState<string>("INAPPROPRIATE_CONTENT")
-  const [reportDescription, setReportDescription] = useState("")
+  const [reportReason, setReportReason] = useState<string>(
+    'INAPPROPRIATE_CONTENT'
+  )
+  const [reportDescription, setReportDescription] = useState('')
 
   const handleLikeClick = async () => {
     await handleLike(item.id)
@@ -85,7 +92,7 @@ export function FeedItemCard({ item }: FeedItemProps) {
 
     try {
       await handleComment(item.id, commentText)
-      setCommentText("")
+      setCommentText('')
       setIsCommenting(false)
     } finally {
       setIsSubmitting(false)
@@ -97,7 +104,7 @@ export function FeedItemCard({ item }: FeedItemProps) {
 
     try {
       await handleShare(item.id, shareText)
-      setShareText("")
+      setShareText('')
       setIsSharingDialogOpen(false)
     } finally {
       setIsSubmitting(false)
@@ -110,22 +117,28 @@ export function FeedItemCard({ item }: FeedItemProps) {
     setIsSubmitting(true)
 
     try {
-      await reportContent(user.id, "post", item.id, reportReason, reportDescription)
+      await reportContent(
+        user.id,
+        'post',
+        item.id,
+        reportReason,
+        reportDescription
+      )
 
       setIsReportDialogOpen(false)
-      setReportReason("INAPPROPRIATE_CONTENT")
-      setReportDescription("")
+      setReportReason('INAPPROPRIATE_CONTENT')
+      setReportDescription('')
 
       toast({
-        title: "Content reported",
-        description: "Thank you for helping keep our platform professional.",
+        title: 'Content reported',
+        description: 'Thank you for helping keep our platform professional.',
       })
     } catch (error) {
-      console.error("Error reporting content:", error)
+      console.error('Error reporting content:', error)
       toast({
-        title: "Error",
-        description: "Failed to report content. Please try again.",
-        variant: "destructive",
+        title: 'Error',
+        description: 'Failed to report content. Please try again.',
+        variant: 'destructive',
       })
     } finally {
       setIsSubmitting(false)
@@ -133,7 +146,9 @@ export function FeedItemCard({ item }: FeedItemProps) {
   }
 
   // Format the timestamp
-  const formattedTime = formatDistanceToNow(new Date(item.createdAt), { addSuffix: true })
+  const formattedTime = formatDistanceToNow(new Date(item.createdAt), {
+    addSuffix: true,
+  })
 
   // Get the icon based on content type
   const getContentTypeIcon = () => {
@@ -153,15 +168,15 @@ export function FeedItemCard({ item }: FeedItemProps) {
   const getContentTypeLabel = () => {
     switch (item.type) {
       case ContentType.ARTICLE:
-        return "Article"
+        return 'Article'
       case ContentType.NEWS:
-        return "News"
+        return 'News'
       case ContentType.UPDATE:
-        return "Update"
+        return 'Update'
       case ContentType.EVENT:
-        return "Event"
+        return 'Event'
       default:
-        return "Post"
+        return 'Post'
     }
   }
 
@@ -171,16 +186,25 @@ export function FeedItemCard({ item }: FeedItemProps) {
         <div className="flex justify-between">
           <div className="flex items-start gap-3">
             <Avatar>
-              <AvatarImage src={item.authorImage || "/placeholder.svg?height=40&width=40"} alt={item.authorName} />
+              <AvatarImage
+                src={item.authorImage || '/placeholder.svg?height=40&width=40'}
+                alt={item.authorName}
+              />
               <AvatarFallback>{item.authorName.charAt(0)}</AvatarFallback>
             </Avatar>
             <div>
               <div className="flex items-center">
-                <Link href={`/profile/${item.authorId}`} className="font-semibold hover:underline">
+                <Link
+                  href={`/profile/${item.authorId}`}
+                  className="font-semibold hover:underline"
+                >
                   {item.authorName}
                 </Link>
                 {item.type !== ContentType.POST && (
-                  <Badge variant="outline" className="ml-2 text-xs py-0 px-1 flex items-center">
+                  <Badge
+                    variant="outline"
+                    className="ml-2 text-xs py-0 px-1 flex items-center"
+                  >
                     {getContentTypeIcon()}
                     {getContentTypeLabel()}
                   </Badge>
@@ -189,7 +213,7 @@ export function FeedItemCard({ item }: FeedItemProps) {
               {(item.authorRole || item.authorCompany) && (
                 <p className="text-sm text-muted-foreground">
                   {item.authorRole}
-                  {item.authorCompany ? ` at ${item.authorCompany}` : ""}
+                  {item.authorCompany ? ` at ${item.authorCompany}` : ''}
                 </p>
               )}
               <p className="text-xs text-muted-foreground">{formattedTime}</p>
@@ -232,11 +256,18 @@ export function FeedItemCard({ item }: FeedItemProps) {
         <p className="whitespace-pre-line">{item.content}</p>
 
         {item.media && item.media.length > 0 && (
-          <div className={`mt-3 grid gap-2 ${item.media.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
+          <div
+            className={`mt-3 grid gap-2 ${
+              item.media.length > 1 ? 'grid-cols-2' : 'grid-cols-1'
+            }`}
+          >
             {item.media.slice(0, 4).map((mediaUrl, index) => (
-              <div key={index} className="relative aspect-video rounded-md overflow-hidden">
+              <div
+                key={index}
+                className="relative aspect-video rounded-md overflow-hidden"
+              >
                 <Image
-                  src={mediaUrl || "/placeholder.svg?height=300&width=500"}
+                  src={mediaUrl || '/placeholder.svg?height=300&width=500'}
                   alt={`Media ${index + 1}`}
                   fill
                   className="object-cover"
@@ -244,7 +275,9 @@ export function FeedItemCard({ item }: FeedItemProps) {
               </div>
             ))}
             {item.media.length > 4 && (
-              <div className="text-sm text-muted-foreground mt-1">+{item.media.length - 4} more</div>
+              <div className="text-sm text-muted-foreground mt-1">
+                +{item.media.length - 4} more
+              </div>
             )}
           </div>
         )}
@@ -262,7 +295,11 @@ export function FeedItemCard({ item }: FeedItemProps) {
           </div>
         )}
 
-        {item.source && <div className="mt-3 text-xs text-muted-foreground">Source: {item.source}</div>}
+        {item.source && (
+          <div className="mt-3 text-xs text-muted-foreground">
+            Source: {item.source}
+          </div>
+        )}
 
         {item.relevanceScore !== undefined && (
           <TooltipProvider>
@@ -275,7 +312,9 @@ export function FeedItemCard({ item }: FeedItemProps) {
                       style={{ width: `${item.relevanceScore * 100}%` }}
                     ></div>
                   </div>
-                  <span>Relevance: {Math.round(item.relevanceScore * 100)}%</span>
+                  <span>
+                    Relevance: {Math.round(item.relevanceScore * 100)}%
+                  </span>
                 </div>
               </TooltipTrigger>
               <TooltipContent>
@@ -291,7 +330,7 @@ export function FeedItemCard({ item }: FeedItemProps) {
           <div className="flex justify-between mb-2">
             <div className="text-sm text-muted-foreground">
               {item.likes > 0 && `${item.likes} likes`}
-              {item.likes > 0 && item.comments > 0 && " • "}
+              {item.likes > 0 && item.comments > 0 && ' • '}
               {item.comments > 0 && `${item.comments} comments`}
             </div>
             <div className="text-sm text-muted-foreground flex items-center">
@@ -304,14 +343,19 @@ export function FeedItemCard({ item }: FeedItemProps) {
             <Button
               variant="ghost"
               size="sm"
-              className={`gap-1 ${item.isLiked ? "text-primary" : ""}`}
+              className={`gap-1 ${item.isLiked ? 'text-primary' : ''}`}
               onClick={handleLikeClick}
             >
               <ThumbsUp className="h-4 w-4" />
               Like
             </Button>
 
-            <Button variant="ghost" size="sm" className="gap-1" onClick={handleCommentClick}>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="gap-1"
+              onClick={handleCommentClick}
+            >
               <MessageSquare className="h-4 w-4" />
               Comment
             </Button>
@@ -319,7 +363,7 @@ export function FeedItemCard({ item }: FeedItemProps) {
             <Button
               variant="ghost"
               size="sm"
-              className={`gap-1 ${item.isShared ? "text-primary" : ""}`}
+              className={`gap-1 ${item.isShared ? 'text-primary' : ''}`}
               onClick={handleShareClick}
             >
               <Share className="h-4 w-4" />
@@ -341,19 +385,23 @@ export function FeedItemCard({ item }: FeedItemProps) {
                   size="sm"
                   onClick={() => {
                     setIsCommenting(false)
-                    setCommentText("")
+                    setCommentText('')
                   }}
                 >
                   Cancel
                 </Button>
-                <Button size="sm" onClick={handleSubmitComment} disabled={!commentText.trim() || isSubmitting}>
+                <Button
+                  size="sm"
+                  onClick={handleSubmitComment}
+                  disabled={!commentText.trim() || isSubmitting}
+                >
                   {isSubmitting ? (
                     <>
                       <Loader2 className="h-4 w-4 mr-1 animate-spin" />
                       Posting...
                     </>
                   ) : (
-                    "Post Comment"
+                    'Post Comment'
                   )}
                 </Button>
               </div>
@@ -367,7 +415,9 @@ export function FeedItemCard({ item }: FeedItemProps) {
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Share Post</DialogTitle>
-            <DialogDescription>Share this post with your network</DialogDescription>
+            <DialogDescription>
+              Share this post with your network
+            </DialogDescription>
           </DialogHeader>
 
           <div className="py-4">
@@ -381,8 +431,15 @@ export function FeedItemCard({ item }: FeedItemProps) {
             <div className="mt-4 p-4 border rounded-md">
               <div className="flex items-center gap-2 mb-2">
                 <Avatar className="h-6 w-6">
-                  <AvatarImage src={item.authorImage || "/placeholder.svg?height=24&width=24"} alt={item.authorName} />
-                  <AvatarFallback className="text-xs">{item.authorName.charAt(0)}</AvatarFallback>
+                  <AvatarImage
+                    src={
+                      item.authorImage || '/placeholder.svg?height=24&width=24'
+                    }
+                    alt={item.authorName}
+                  />
+                  <AvatarFallback className="text-xs">
+                    {item.authorName.charAt(0)}
+                  </AvatarFallback>
                 </Avatar>
                 <span className="text-sm font-medium">{item.authorName}</span>
               </div>
@@ -391,7 +448,10 @@ export function FeedItemCard({ item }: FeedItemProps) {
           </div>
 
           <DialogFooter>
-            <Button variant="outline" onClick={() => setIsSharingDialogOpen(false)}>
+            <Button
+              variant="outline"
+              onClick={() => setIsSharingDialogOpen(false)}
+            >
               Cancel
             </Button>
             <Button onClick={handleSubmitShare} disabled={isSubmitting}>
@@ -401,7 +461,7 @@ export function FeedItemCard({ item }: FeedItemProps) {
                   Sharing...
                 </>
               ) : (
-                "Share"
+                'Share'
               )}
             </Button>
           </DialogFooter>
@@ -413,7 +473,9 @@ export function FeedItemCard({ item }: FeedItemProps) {
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Report Content</DialogTitle>
-            <DialogDescription>Please let us know why you're reporting this content</DialogDescription>
+            <DialogDescription>
+              Please let us know why you're reporting this content
+            </DialogDescription>
           </DialogHeader>
 
           <div className="py-4">
@@ -425,18 +487,25 @@ export function FeedItemCard({ item }: FeedItemProps) {
                   className="w-full p-2 border rounded-md"
                   value={reportReason}
                   onChange={(e) => setReportReason(e.target.value)}
+                  aria-label="Report reason"
                 >
-                  <option value="INAPPROPRIATE_CONTENT">Inappropriate Content</option>
+                  <option value="INAPPROPRIATE_CONTENT">
+                    Inappropriate Content
+                  </option>
                   <option value="SPAM">Spam</option>
                   <option value="HARASSMENT">Harassment</option>
                   <option value="MISINFORMATION">Misinformation</option>
-                  <option value="INTELLECTUAL_PROPERTY">Intellectual Property Violation</option>
+                  <option value="INTELLECTUAL_PROPERTY">
+                    Intellectual Property Violation
+                  </option>
                   <option value="OTHER">Other</option>
                 </select>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="report-description">Description (Optional)</Label>
+                <Label htmlFor="report-description">
+                  Description (Optional)
+                </Label>
                 <Textarea
                   id="report-description"
                   placeholder="Please provide additional details about your report"
@@ -449,17 +518,24 @@ export function FeedItemCard({ item }: FeedItemProps) {
           </div>
 
           <DialogFooter>
-            <Button variant="outline" onClick={() => setIsReportDialogOpen(false)}>
+            <Button
+              variant="outline"
+              onClick={() => setIsReportDialogOpen(false)}
+            >
               Cancel
             </Button>
-            <Button variant="destructive" onClick={handleReportContent} disabled={isSubmitting}>
+            <Button
+              variant="destructive"
+              onClick={handleReportContent}
+              disabled={isSubmitting}
+            >
               {isSubmitting ? (
                 <>
                   <Loader2 className="h-4 w-4 mr-1 animate-spin" />
                   Submitting...
                 </>
               ) : (
-                "Submit Report"
+                'Submit Report'
               )}
             </Button>
           </DialogFooter>
@@ -468,4 +544,3 @@ export function FeedItemCard({ item }: FeedItemProps) {
     </Card>
   )
 }
-
