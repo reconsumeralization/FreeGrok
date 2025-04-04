@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ai-sdk/openai':
-        specifier: ^1.3.4
-        version: 1.3.4(zod@3.24.2)
+        specifier: ^1.3.6
+        version: 1.3.6(zod@3.24.2)
       '@auth/core':
         specifier: latest
         version: 0.38.0(nodemailer@6.10.0)
@@ -22,7 +22,7 @@ importers:
         version: 3.782.0
       '@cloudflare/workers-types':
         specifier: latest
-        version: 4.20250403.0
+        version: 4.20250404.0
       '@electric-sql/pglite':
         specifier: latest
         version: 0.2.17
@@ -199,10 +199,10 @@ importers:
         version: 0.30.6
       drizzle-orm:
         specifier: latest
-        version: 0.41.0(sne3o5b2gouf7kycvxsxvktjya)
+        version: 0.41.0(a2msyscuyyc7sirsairgizmzii)
       drizzle-zod:
         specifier: latest
-        version: 0.7.1(drizzle-orm@0.41.0(sne3o5b2gouf7kycvxsxvktjya))(zod@3.24.2)
+        version: 0.7.1(drizzle-orm@0.41.0(a2msyscuyyc7sirsairgizmzii))(zod@3.24.2)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -335,14 +335,20 @@ packages:
   '@adobe/css-tools@4.4.2':
     resolution: {integrity: sha512-baYZExFpsdkBNuvGKTKWCwKH57HRZLVtycZS05WTQNVOiXVSeAki3nU35zlRbToeMW8aHlJfyS+1C4BOv27q0A==}
 
-  '@ai-sdk/openai@1.3.4':
-    resolution: {integrity: sha512-BOw7dQpiTlpaqi1u/NU4Or2+jA6buzl6GOUuYyu/uFI7dxJs1zPkY8IjAp4DQhi+kQGH6GGbEPw0LkIbeK4BVA==}
+  '@ai-sdk/openai@1.3.6':
+    resolution: {integrity: sha512-Lyp6W6dg+ERMJru3DI8/pWAjXLB0GbMMlXh4jxA3mVny8CJHlCAjlEJRuAdLg1/CFz4J1UDN2/4qBnIWtLFIqw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.0.0
 
   '@ai-sdk/provider-utils@2.2.1':
     resolution: {integrity: sha512-BuExLp+NcpwsAVj1F4bgJuQkSqO/+roV9wM7RdIO+NVrcT8RBUTdXzf5arHt5T58VpK7bZyB2V9qigjaPHE+Dg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: ^3.23.8
+
+  '@ai-sdk/provider-utils@2.2.3':
+    resolution: {integrity: sha512-o3fWTzkxzI5Af7U7y794MZkYNEsxbjLam2nxyoUZSScqkacb7vZ3EYHLh21+xCcSSzEC161C7pZAGHtC0hTUMw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.23.8
@@ -1204,8 +1210,8 @@ packages:
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
     engines: {node: '>=6.9.0'}
 
-  '@cloudflare/workers-types@4.20250403.0':
-    resolution: {integrity: sha512-wLsXNfxBPsV+PPUInCCFeoXTZMHNEAFHvVe1E0/S0Cp9JrKTsSEeIMY4zUvR5ULxNAQkeDVqPjYRaKFkzpkX3w==}
+  '@cloudflare/workers-types@4.20250404.0':
+    resolution: {integrity: sha512-XB8LNS9spWcxU56Tt/RPl0S06oyXfZCSDVKBbzjHYZtgN5kZP4UtTR01t16HUfo330EtJOo8cdo/PbiBAwRNIg==}
 
   '@date-fns/tz@1.2.0':
     resolution: {integrity: sha512-LBrd7MiJZ9McsOgxqWX7AaxrDjcFVjWH/tIKJd7pnR7McaslGYOP1QmmiBXdJH/H/yLCT+rcQ7FaPBUxRGUtrg==}
@@ -6726,13 +6732,20 @@ snapshots:
 
   '@adobe/css-tools@4.4.2': {}
 
-  '@ai-sdk/openai@1.3.4(zod@3.24.2)':
+  '@ai-sdk/openai@1.3.6(zod@3.24.2)':
     dependencies:
       '@ai-sdk/provider': 1.1.0
-      '@ai-sdk/provider-utils': 2.2.1(zod@3.24.2)
+      '@ai-sdk/provider-utils': 2.2.3(zod@3.24.2)
       zod: 3.24.2
 
   '@ai-sdk/provider-utils@2.2.1(zod@3.24.2)':
+    dependencies:
+      '@ai-sdk/provider': 1.1.0
+      nanoid: 3.3.11
+      secure-json-parse: 2.7.0
+      zod: 3.24.2
+
+  '@ai-sdk/provider-utils@2.2.3(zod@3.24.2)':
     dependencies:
       '@ai-sdk/provider': 1.1.0
       nanoid: 3.3.11
@@ -8017,7 +8030,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@cloudflare/workers-types@4.20250403.0': {}
+  '@cloudflare/workers-types@4.20250404.0': {}
 
   '@date-fns/tz@1.2.0': {}
 
@@ -11099,10 +11112,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.41.0(sne3o5b2gouf7kycvxsxvktjya):
+  drizzle-orm@0.41.0(a2msyscuyyc7sirsairgizmzii):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.782.0
-      '@cloudflare/workers-types': 4.20250403.0
+      '@cloudflare/workers-types': 4.20250404.0
       '@electric-sql/pglite': 0.2.17
       '@libsql/client': 0.15.2(bufferutil@4.0.9)
       '@libsql/client-wasm': 0.15.2
@@ -11130,9 +11143,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.7.1(drizzle-orm@0.41.0(sne3o5b2gouf7kycvxsxvktjya))(zod@3.24.2):
+  drizzle-zod@0.7.1(drizzle-orm@0.41.0(a2msyscuyyc7sirsairgizmzii))(zod@3.24.2):
     dependencies:
-      drizzle-orm: 0.41.0(sne3o5b2gouf7kycvxsxvktjya)
+      drizzle-orm: 0.41.0(a2msyscuyyc7sirsairgizmzii)
       zod: 3.24.2
 
   dunder-proto@1.0.1:
