@@ -22,7 +22,7 @@ importers:
         version: 3.782.0
       '@cloudflare/workers-types':
         specifier: latest
-        version: 4.20250403.0
+        version: 4.20250404.0
       '@electric-sql/pglite':
         specifier: latest
         version: 0.2.17
@@ -199,10 +199,10 @@ importers:
         version: 0.30.6
       drizzle-orm:
         specifier: latest
-        version: 0.41.0(sne3o5b2gouf7kycvxsxvktjya)
+        version: 0.41.0(a2msyscuyyc7sirsairgizmzii)
       drizzle-zod:
         specifier: latest
-        version: 0.7.1(drizzle-orm@0.41.0(sne3o5b2gouf7kycvxsxvktjya))(zod@3.24.2)
+        version: 0.7.1(drizzle-orm@0.41.0(a2msyscuyyc7sirsairgizmzii))(zod@3.24.2)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -298,7 +298,7 @@ importers:
         version: 3.0.2
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@4.0.17)
+        version: 1.0.7(tailwindcss@4.1.0)
       vaul:
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -316,8 +316,8 @@ importers:
         specifier: ^19
         version: 19.0.4(@types/react@19.0.12)
       tailwindcss:
-        specifier: ^4.0.17
-        version: 4.0.17
+        specifier: ^4.1.0
+        version: 4.1.0
       typescript:
         specifier: ^5
         version: 5.8.2
@@ -1204,8 +1204,8 @@ packages:
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
     engines: {node: '>=6.9.0'}
 
-  '@cloudflare/workers-types@4.20250403.0':
-    resolution: {integrity: sha512-wLsXNfxBPsV+PPUInCCFeoXTZMHNEAFHvVe1E0/S0Cp9JrKTsSEeIMY4zUvR5ULxNAQkeDVqPjYRaKFkzpkX3w==}
+  '@cloudflare/workers-types@4.20250404.0':
+    resolution: {integrity: sha512-XB8LNS9spWcxU56Tt/RPl0S06oyXfZCSDVKBbzjHYZtgN5kZP4UtTR01t16HUfo330EtJOo8cdo/PbiBAwRNIg==}
 
   '@date-fns/tz@1.2.0':
     resolution: {integrity: sha512-LBrd7MiJZ9McsOgxqWX7AaxrDjcFVjWH/tIKJd7pnR7McaslGYOP1QmmiBXdJH/H/yLCT+rcQ7FaPBUxRGUtrg==}
@@ -6309,8 +6309,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
 
-  tailwindcss@4.0.17:
-    resolution: {integrity: sha512-OErSiGzRa6rLiOvaipsDZvLMSpsBZ4ysB4f0VKGXUrjw2jfkJRd6kjRKV2+ZmTCNvwtvgdDam5D7w6WXsdLJZw==}
+  tailwindcss@4.1.0:
+    resolution: {integrity: sha512-vBYstoFnvUZCDxaauNGQQEvJNQgCd1vSMDRYuZZMH1xRRcTboOk1rJrW5yFkEabU9X6Yx1C4LQ+QvPOvQj4Daw==}
 
   tar-fs@2.1.2:
     resolution: {integrity: sha512-EsaAXwxmx8UB7FRKqeozqEPop69DXcmYwTQwXvyAPF352HJsPdkVhvTaDPYqfNgruveJIJy3TA2l+2zj8LJIJA==}
@@ -8017,7 +8017,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@cloudflare/workers-types@4.20250403.0': {}
+  '@cloudflare/workers-types@4.20250404.0': {}
 
   '@date-fns/tz@1.2.0': {}
 
@@ -11099,10 +11099,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.41.0(sne3o5b2gouf7kycvxsxvktjya):
+  drizzle-orm@0.41.0(a2msyscuyyc7sirsairgizmzii):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.782.0
-      '@cloudflare/workers-types': 4.20250403.0
+      '@cloudflare/workers-types': 4.20250404.0
       '@electric-sql/pglite': 0.2.17
       '@libsql/client': 0.15.2(bufferutil@4.0.9)
       '@libsql/client-wasm': 0.15.2
@@ -11130,9 +11130,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.7.1(drizzle-orm@0.41.0(sne3o5b2gouf7kycvxsxvktjya))(zod@3.24.2):
+  drizzle-zod@0.7.1(drizzle-orm@0.41.0(a2msyscuyyc7sirsairgizmzii))(zod@3.24.2):
     dependencies:
-      drizzle-orm: 0.41.0(sne3o5b2gouf7kycvxsxvktjya)
+      drizzle-orm: 0.41.0(a2msyscuyyc7sirsairgizmzii)
       zod: 3.24.2
 
   dunder-proto@1.0.1:
@@ -13766,11 +13766,11 @@ snapshots:
 
   tailwind-merge@3.0.2: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@4.0.17):
+  tailwindcss-animate@1.0.7(tailwindcss@4.1.0):
     dependencies:
-      tailwindcss: 4.0.17
+      tailwindcss: 4.1.0
 
-  tailwindcss@4.0.17: {}
+  tailwindcss@4.1.0: {}
 
   tar-fs@2.1.2:
     dependencies:
