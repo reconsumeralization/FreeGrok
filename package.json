@@ -59,7 +59,7 @@
     "@types/sql.js": "latest",
     "@vercel/postgres": "latest",
     "@xata.io/client": "latest",
-    "ai": "^4.2.8",
+    "ai": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "bcrypt": "^5.1.1",
     "bcryptjs": "latest",
