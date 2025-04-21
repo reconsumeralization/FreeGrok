@@ -95,7 +95,7 @@
     "postgres": "latest",
     "prisma": "latest",
     "react": "^19",
-    "react-day-picker": "9.6.3",
+    "react-day-picker": "9.6.7",
     "react-dom": "^19",
     "react-hook-form": "latest",
     "react-resizable-panels": "^2.1.7",
