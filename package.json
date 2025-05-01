@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^1.3.4",
+    "@ai-sdk/openai": "^1.3.21",
     "@auth/core": "latest",
     "@auth/drizzle-adapter": "latest",
     "@aws-sdk/client-rds-data": "latest",
