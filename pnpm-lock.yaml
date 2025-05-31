@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ai-sdk/openai':
-        specifier: ^1.3.4
-        version: 1.3.4(zod@3.25.42)
+        specifier: ^1.3.22
+        version: 1.3.22(zod@3.25.43)
       '@auth/core':
         specifier: latest
         version: 0.39.1(nodemailer@7.0.3)
@@ -160,7 +160,7 @@ importers:
         version: 0.30.1(typescript@5.8.2)
       ai:
         specifier: ^4.2.8
-        version: 4.2.8(react@19.1.0)(zod@3.25.42)
+        version: 4.2.8(react@19.1.0)(zod@3.25.43)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.21(postcss@8.5.4)
@@ -202,7 +202,7 @@ importers:
         version: 0.44.1(adabtkry7oxx6mi24n3enxvwye)
       drizzle-zod:
         specifier: latest
-        version: 0.8.2(drizzle-orm@0.44.1(adabtkry7oxx6mi24n3enxvwye))(zod@3.25.42)
+        version: 0.8.2(drizzle-orm@0.44.1(adabtkry7oxx6mi24n3enxvwye))(zod@3.25.43)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -304,7 +304,7 @@ importers:
         version: 1.1.2(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       zod:
         specifier: latest
-        version: 3.25.42
+        version: 3.25.43
     devDependencies:
       '@types/node':
         specifier: ^22
@@ -335,8 +335,8 @@ packages:
   '@adobe/css-tools@4.4.2':
     resolution: {integrity: sha512-baYZExFpsdkBNuvGKTKWCwKH57HRZLVtycZS05WTQNVOiXVSeAki3nU35zlRbToeMW8aHlJfyS+1C4BOv27q0A==}
 
-  '@ai-sdk/openai@1.3.4':
-    resolution: {integrity: sha512-BOw7dQpiTlpaqi1u/NU4Or2+jA6buzl6GOUuYyu/uFI7dxJs1zPkY8IjAp4DQhi+kQGH6GGbEPw0LkIbeK4BVA==}
+  '@ai-sdk/openai@1.3.22':
+    resolution: {integrity: sha512-QwA+2EkG0QyjVR+7h6FE7iOu2ivNqAVMm9UJZkVxxTk5OIq5fFJDTEI/zICEMuHImTTXR2JjsL6EirJ28Jc4cw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.0.0
@@ -347,8 +347,18 @@ packages:
     peerDependencies:
       zod: ^3.23.8
 
+  '@ai-sdk/provider-utils@2.2.8':
+    resolution: {integrity: sha512-fqhG+4sCVv8x7nFzYnFo19ryhAa3w096Kmc3hWxMQfW/TubPOmt3A6tYZhl4mUfQWWQMsuSkLrtjlWuXBVSGQA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: ^3.23.8
+
   '@ai-sdk/provider@1.1.0':
     resolution: {integrity: sha512-0M+qjp+clUD0R1E5eWQFhxEvWLNaOtGQRUaBn8CUABnSKredagq92hUS9VjOzGsTm37xLfpaxl97AVtbeOsHew==}
+    engines: {node: '>=18'}
+
+  '@ai-sdk/provider@1.1.3':
+    resolution: {integrity: sha512-qZMxYJ0qqX/RfnuIaab+zp8UAeJn/ygXXAffR5I4N0n1IrvA6qBsjc8hXLmBiMV2zoXlifkacF7sEFnYnjBcqg==}
     engines: {node: '>=18'}
 
   '@ai-sdk/react@1.2.3':
@@ -6696,8 +6706,8 @@ packages:
     peerDependencies:
       zod: ^3.24.1
 
-  zod@3.25.42:
-    resolution: {integrity: sha512-PcALTLskaucbeHc41tU/xfjfhcz8z0GdhhDcSgrCTmSazUuqnYqiXO63M0QUBVwpBlsLsNVn5qHSC5Dw3KZvaQ==}
+  zod@3.25.43:
+    resolution: {integrity: sha512-KrQFEkfox9WLfYCOksqEWjf97QdgSC1YJSqxJxnWz0l+BW8mN2PQ+yjshL8RC7RC5p5YOlUCLyTDNaf++QbPtA==}
 
 snapshots:
 
@@ -6705,39 +6715,50 @@ snapshots:
 
   '@adobe/css-tools@4.4.2': {}
 
-  '@ai-sdk/openai@1.3.4(zod@3.25.42)':
+  '@ai-sdk/openai@1.3.22(zod@3.25.43)':
     dependencies:
-      '@ai-sdk/provider': 1.1.0
-      '@ai-sdk/provider-utils': 2.2.1(zod@3.25.42)
-      zod: 3.25.42
+      '@ai-sdk/provider': 1.1.3
+      '@ai-sdk/provider-utils': 2.2.8(zod@3.25.43)
+      zod: 3.25.43
 
-  '@ai-sdk/provider-utils@2.2.1(zod@3.25.42)':
+  '@ai-sdk/provider-utils@2.2.1(zod@3.25.43)':
     dependencies:
       '@ai-sdk/provider': 1.1.0
       nanoid: 3.3.11
       secure-json-parse: 2.7.0
-      zod: 3.25.42
+      zod: 3.25.43
+
+  '@ai-sdk/provider-utils@2.2.8(zod@3.25.43)':
+    dependencies:
+      '@ai-sdk/provider': 1.1.3
+      nanoid: 3.3.11
+      secure-json-parse: 2.7.0
+      zod: 3.25.43
 
   '@ai-sdk/provider@1.1.0':
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@1.2.3(react@19.1.0)(zod@3.25.42)':
+  '@ai-sdk/provider@1.1.3':
     dependencies:
-      '@ai-sdk/provider-utils': 2.2.1(zod@3.25.42)
-      '@ai-sdk/ui-utils': 1.2.2(zod@3.25.42)
+      json-schema: 0.4.0
+
+  '@ai-sdk/react@1.2.3(react@19.1.0)(zod@3.25.43)':
+    dependencies:
+      '@ai-sdk/provider-utils': 2.2.1(zod@3.25.43)
+      '@ai-sdk/ui-utils': 1.2.2(zod@3.25.43)
       react: 19.1.0
       swr: 2.3.3(react@19.1.0)
       throttleit: 2.1.0
     optionalDependencies:
-      zod: 3.25.42
+      zod: 3.25.43
 
-  '@ai-sdk/ui-utils@1.2.2(zod@3.25.42)':
+  '@ai-sdk/ui-utils@1.2.2(zod@3.25.43)':
     dependencies:
       '@ai-sdk/provider': 1.1.0
-      '@ai-sdk/provider-utils': 2.2.1(zod@3.25.42)
-      zod: 3.25.42
-      zod-to-json-schema: 3.24.5(zod@3.25.42)
+      '@ai-sdk/provider-utils': 2.2.1(zod@3.25.43)
+      zod: 3.25.43
+      zod-to-json-schema: 3.24.5(zod@3.25.43)
 
   '@ampproject/remapping@2.3.0':
     dependencies:
@@ -10348,15 +10369,15 @@ snapshots:
       clean-stack: 2.2.0
       indent-string: 4.0.0
 
-  ai@4.2.8(react@19.1.0)(zod@3.25.42):
+  ai@4.2.8(react@19.1.0)(zod@3.25.43):
     dependencies:
       '@ai-sdk/provider': 1.1.0
-      '@ai-sdk/provider-utils': 2.2.1(zod@3.25.42)
-      '@ai-sdk/react': 1.2.3(react@19.1.0)(zod@3.25.42)
-      '@ai-sdk/ui-utils': 1.2.2(zod@3.25.42)
+      '@ai-sdk/provider-utils': 2.2.1(zod@3.25.43)
+      '@ai-sdk/react': 1.2.3(react@19.1.0)(zod@3.25.43)
+      '@ai-sdk/ui-utils': 1.2.2(zod@3.25.43)
       '@opentelemetry/api': 1.9.0
       jsondiffpatch: 0.6.0
-      zod: 3.25.42
+      zod: 3.25.43
     optionalDependencies:
       react: 19.1.0
 
@@ -11132,10 +11153,10 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.8.2(drizzle-orm@0.44.1(adabtkry7oxx6mi24n3enxvwye))(zod@3.25.42):
+  drizzle-zod@0.8.2(drizzle-orm@0.44.1(adabtkry7oxx6mi24n3enxvwye))(zod@3.25.43):
     dependencies:
       drizzle-orm: 0.44.1(adabtkry7oxx6mi24n3enxvwye)
-      zod: 3.25.42
+      zod: 3.25.43
 
   dunder-proto@1.0.1:
     dependencies:
@@ -14177,8 +14198,8 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-to-json-schema@3.24.5(zod@3.25.42):
+  zod-to-json-schema@3.24.5(zod@3.25.43):
     dependencies:
-      zod: 3.25.42
+      zod: 3.25.43
 
-  zod@3.25.42: {}
+  zod@3.25.43: {}
