@@ -316,7 +316,7 @@ importers:
         specifier: ^19
         version: 19.1.5(@types/react@19.1.6)
       tailwindcss:
-        specifier: ^4.0.17
+        specifier: ^4.1.8
         version: 4.1.8
       typescript:
         specifier: ^5
@@ -11551,7 +11551,7 @@ snapshots:
 
   dotenv-expand@11.0.7:
     dependencies:
-      dotenv: 16.4.7
+      dotenv: 16.5.0
 
   dotenv@16.4.7: {}
 
