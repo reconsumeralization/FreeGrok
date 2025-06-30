@@ -70,7 +70,7 @@
     "cmdk": "1.1.1",
     "crypto-js": "latest",
     "date-fns": "^4.1.0",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.6.1",
     "drizzle-kit": "latest",
     "drizzle-orm": "latest",
     "drizzle-zod": "latest",
