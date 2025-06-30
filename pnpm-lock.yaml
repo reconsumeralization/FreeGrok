@@ -192,17 +192,17 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       dotenv:
-        specifier: ^16.4.7
-        version: 16.5.0
+        specifier: ^16.6.1
+        version: 16.6.1
       drizzle-kit:
         specifier: latest
         version: 0.31.4
       drizzle-orm:
         specifier: latest
-        version: 0.44.2(y3n2jrsvu6gxahqniknjycvztq)
+        version: 0.44.2(439b08e5d3f4cfb4006661638c462e58)
       drizzle-zod:
         specifier: latest
-        version: 0.8.2(drizzle-orm@0.44.2(y3n2jrsvu6gxahqniknjycvztq))(zod@3.25.67)
+        version: 0.8.2(drizzle-orm@0.44.2(439b08e5d3f4cfb4006661638c462e58))(zod@3.25.67)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -3958,8 +3958,8 @@ packages:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
-  dotenv@16.5.0:
-    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
+  dotenv@16.6.1:
+    resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
     engines: {node: '>=12'}
 
   drizzle-kit@0.31.4:
@@ -11330,11 +11330,11 @@ snapshots:
 
   dotenv-expand@11.0.7:
     dependencies:
-      dotenv: 16.5.0
+      dotenv: 16.6.1
 
   dotenv@16.4.7: {}
 
-  dotenv@16.5.0: {}
+  dotenv@16.6.1: {}
 
   drizzle-kit@0.31.4:
     dependencies:
@@ -11345,7 +11345,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.2(y3n2jrsvu6gxahqniknjycvztq):
+  drizzle-orm@0.44.2(439b08e5d3f4cfb4006661638c462e58):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.839.0
       '@cloudflare/workers-types': 4.20250628.0
@@ -11376,9 +11376,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.8.2(drizzle-orm@0.44.2(y3n2jrsvu6gxahqniknjycvztq))(zod@3.25.67):
+  drizzle-zod@0.8.2(drizzle-orm@0.44.2(439b08e5d3f4cfb4006661638c462e58))(zod@3.25.67):
     dependencies:
-      drizzle-orm: 0.44.2(y3n2jrsvu6gxahqniknjycvztq)
+      drizzle-orm: 0.44.2(439b08e5d3f4cfb4006661638c462e58)
       zod: 3.25.67
 
   dunder-proto@1.0.1:
