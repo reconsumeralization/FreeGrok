@@ -199,10 +199,10 @@ importers:
         version: 0.31.4
       drizzle-orm:
         specifier: latest
-        version: 0.44.2(y3n2jrsvu6gxahqniknjycvztq)
+        version: 0.44.2(439b08e5d3f4cfb4006661638c462e58)
       drizzle-zod:
         specifier: latest
-        version: 0.8.2(drizzle-orm@0.44.2(y3n2jrsvu6gxahqniknjycvztq))(zod@3.25.67)
+        version: 0.8.2(drizzle-orm@0.44.2(439b08e5d3f4cfb4006661638c462e58))(zod@3.25.67)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -294,8 +294,8 @@ importers:
         specifier: latest
         version: 18.2.1(@types/node@22.15.29)
       tailwind-merge:
-        specifier: ^3.0.2
-        version: 3.3.0
+        specifier: ^3.3.1
+        version: 3.3.1
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@4.1.11)
@@ -6414,8 +6414,8 @@ packages:
     resolution: {integrity: sha512-+XZ+r1XGIJGeQk3VvXhT6xx/VpbHsRzsTkGgF6E5RX9TTXD0118l87puaEBZ566FhqblC6U0d4XnubznJDm30A==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tailwind-merge@3.3.0:
-    resolution: {integrity: sha512-fyW/pEfcQSiigd5SNn0nApUOxx0zB/dm6UDU/rEwc2c3sX2smWUNbapHv+QRqLGVp9GWX3THIa7MUGPo+YkDzQ==}
+  tailwind-merge@3.3.1:
+    resolution: {integrity: sha512-gBXpgUm/3rp1lMZZrM/w7D8GKqshif0zAymAhbCyIt8KMe+0v9DQ7cdYLR4FHH/cKpdTXb+A/tKKU3eolfsI+g==}
 
   tailwindcss-animate@1.0.7:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
@@ -11345,7 +11345,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.2(y3n2jrsvu6gxahqniknjycvztq):
+  drizzle-orm@0.44.2(439b08e5d3f4cfb4006661638c462e58):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.839.0
       '@cloudflare/workers-types': 4.20250628.0
@@ -11376,9 +11376,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.8.2(drizzle-orm@0.44.2(y3n2jrsvu6gxahqniknjycvztq))(zod@3.25.67):
+  drizzle-zod@0.8.2(drizzle-orm@0.44.2(439b08e5d3f4cfb4006661638c462e58))(zod@3.25.67):
     dependencies:
-      drizzle-orm: 0.44.2(y3n2jrsvu6gxahqniknjycvztq)
+      drizzle-orm: 0.44.2(439b08e5d3f4cfb4006661638c462e58)
       zod: 3.25.67
 
   dunder-proto@1.0.1:
@@ -14058,7 +14058,7 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.2.7
 
-  tailwind-merge@3.3.0: {}
+  tailwind-merge@3.3.1: {}
 
   tailwindcss-animate@1.0.7(tailwindcss@4.1.11):
     dependencies:
