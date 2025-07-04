@@ -100,7 +100,7 @@
     "react-hook-form": "latest",
     "react-resizable-panels": "^2.1.7",
     "recharts": "3.0.2",
-    "sonner": "^2.0.5",
+    "sonner": "^2.0.6",
     "sql.js": "latest",
     "sqlite3": "latest",
     "stripe": "latest",
