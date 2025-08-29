@@ -22,7 +22,7 @@ importers:
         version: 3.876.0
       '@cloudflare/workers-types':
         specifier: latest
-        version: 4.20250828.1
+        version: 4.20250829.0
       '@electric-sql/pglite':
         specifier: latest
         version: 0.3.7
@@ -192,17 +192,17 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       dotenv:
-        specifier: ^16.4.7
-        version: 16.5.0
+        specifier: ^16.6.1
+        version: 16.6.1
       drizzle-kit:
         specifier: latest
         version: 0.31.4
       drizzle-orm:
         specifier: latest
-        version: 0.44.5(606b79077e422f2eaaca07ecd8a03b8a)
+        version: 0.44.5(095df37e187b9596e8c130f2b5eb7de5)
       drizzle-zod:
         specifier: latest
-        version: 0.8.3(drizzle-orm@0.44.5(606b79077e422f2eaaca07ecd8a03b8a))(zod@4.1.5)
+        version: 0.8.3(drizzle-orm@0.44.5(095df37e187b9596e8c130f2b5eb7de5))(zod@4.1.5)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -1212,8 +1212,8 @@ packages:
     resolution: {integrity: sha512-8OLQgDScAOHXnAz2cV+RfzzNMipuLVBz2biuAJFMV9bfkNf393je3VM8CLkjQodW5+iWsSJdSgSWT6rsZoXHPw==}
     engines: {node: '>=6.9.0'}
 
-  '@cloudflare/workers-types@4.20250828.1':
-    resolution: {integrity: sha512-xc8AvNWUVAM3adDgXaJpbEEOu0SgPbEtu+A2qu8DgmtPgQshY6a1iJ+hdOlG1Ws80fwWhwhwRlZgQRlwyZMLcA==}
+  '@cloudflare/workers-types@4.20250829.0':
+    resolution: {integrity: sha512-BptuGoad/zqSj4S3PjFlC1bhVnbSpExjaoZ2KXLvvHPDgPNtuKTCJyaAAibEd3J1vev2bKnjunVin2mrt9hRFg==}
 
   '@date-fns/tz@1.2.0':
     resolution: {integrity: sha512-LBrd7MiJZ9McsOgxqWX7AaxrDjcFVjWH/tIKJd7pnR7McaslGYOP1QmmiBXdJH/H/yLCT+rcQ7FaPBUxRGUtrg==}
@@ -3980,10 +3980,6 @@ packages:
 
   dotenv@16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
-    engines: {node: '>=12'}
-
-  dotenv@16.5.0:
-    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
     engines: {node: '>=12'}
 
   dotenv@16.6.1:
@@ -8233,7 +8229,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@cloudflare/workers-types@4.20250828.1': {}
+  '@cloudflare/workers-types@4.20250829.0': {}
 
   '@date-fns/tz@1.2.0': {}
 
@@ -11440,8 +11436,6 @@ snapshots:
 
   dotenv@16.4.7: {}
 
-  dotenv@16.5.0: {}
-
   dotenv@16.6.1: {}
 
   drizzle-kit@0.31.4:
@@ -11453,10 +11447,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.5(606b79077e422f2eaaca07ecd8a03b8a):
+  drizzle-orm@0.44.5(095df37e187b9596e8c130f2b5eb7de5):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.876.0
-      '@cloudflare/workers-types': 4.20250828.1
+      '@cloudflare/workers-types': 4.20250829.0
       '@electric-sql/pglite': 0.3.7
       '@libsql/client': 0.15.14(bufferutil@4.0.9)
       '@libsql/client-wasm': 0.15.14
@@ -11484,9 +11478,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.8.3(drizzle-orm@0.44.5(606b79077e422f2eaaca07ecd8a03b8a))(zod@4.1.5):
+  drizzle-zod@0.8.3(drizzle-orm@0.44.5(095df37e187b9596e8c130f2b5eb7de5))(zod@4.1.5):
     dependencies:
-      drizzle-orm: 0.44.5(606b79077e422f2eaaca07ecd8a03b8a)
+      drizzle-orm: 0.44.5(095df37e187b9596e8c130f2b5eb7de5)
       zod: 4.1.5
 
   dunder-proto@1.0.1:
