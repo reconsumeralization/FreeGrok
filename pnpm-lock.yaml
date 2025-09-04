@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ai-sdk/openai':
-        specifier: ^1.3.4
-        version: 1.3.22(zod@4.1.5)
+        specifier: ^1.3.24
+        version: 1.3.24(zod@4.1.5)
       '@auth/core':
         specifier: latest
         version: 0.40.0(nodemailer@7.0.6)
@@ -199,10 +199,10 @@ importers:
         version: 0.31.4
       drizzle-orm:
         specifier: latest
-        version: 0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m)
+        version: 0.44.5(2bc7918758475f68a365a78f917f3a1e)
       drizzle-zod:
         specifier: latest
-        version: 0.8.3(drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m))(zod@4.1.5)
+        version: 0.8.3(drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e))(zod@4.1.5)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -335,8 +335,8 @@ packages:
   '@adobe/css-tools@4.4.2':
     resolution: {integrity: sha512-baYZExFpsdkBNuvGKTKWCwKH57HRZLVtycZS05WTQNVOiXVSeAki3nU35zlRbToeMW8aHlJfyS+1C4BOv27q0A==}
 
-  '@ai-sdk/openai@1.3.22':
-    resolution: {integrity: sha512-QwA+2EkG0QyjVR+7h6FE7iOu2ivNqAVMm9UJZkVxxTk5OIq5fFJDTEI/zICEMuHImTTXR2JjsL6EirJ28Jc4cw==}
+  '@ai-sdk/openai@1.3.24':
+    resolution: {integrity: sha512-GYXnGJTHRTZc4gJMSmFRgEQudjqd4PUN0ZjQhPwOAYH1yOAvQoG/Ikqs+HyISRbLPCrhbZnPKCNHuRU4OfpW0Q==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.0.0
@@ -6941,7 +6941,7 @@ snapshots:
 
   '@adobe/css-tools@4.4.2': {}
 
-  '@ai-sdk/openai@1.3.22(zod@4.1.5)':
+  '@ai-sdk/openai@1.3.24(zod@4.1.5)':
     dependencies:
       '@ai-sdk/provider': 1.1.3
       '@ai-sdk/provider-utils': 2.2.8(zod@4.1.5)
@@ -11491,7 +11491,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m):
+  drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.879.0
       '@cloudflare/workers-types': 4.20250904.0
@@ -11522,9 +11522,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.8.3(drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m))(zod@4.1.5):
+  drizzle-zod@0.8.3(drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e))(zod@4.1.5):
     dependencies:
-      drizzle-orm: 0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m)
+      drizzle-orm: 0.44.5(2bc7918758475f68a365a78f917f3a1e)
       zod: 4.1.5
 
   dunder-proto@1.0.1:
