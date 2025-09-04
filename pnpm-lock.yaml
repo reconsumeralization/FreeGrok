@@ -199,10 +199,10 @@ importers:
         version: 0.31.4
       drizzle-orm:
         specifier: latest
-        version: 0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m)
+        version: 0.44.5(2bc7918758475f68a365a78f917f3a1e)
       drizzle-zod:
         specifier: latest
-        version: 0.8.3(drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m))(zod@4.1.5)
+        version: 0.8.3(drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e))(zod@4.1.5)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -282,8 +282,8 @@ importers:
         specifier: 3.0.2
         version: 3.0.2(@types/react@19.1.12)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(redux@5.0.1)
       sonner:
-        specifier: ^2.0.5
-        version: 2.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^2.0.7
+        version: 2.0.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       sql.js:
         specifier: latest
         version: 1.13.0
@@ -6339,8 +6339,8 @@ packages:
     resolution: {integrity: sha512-D3YaD0aRxR3mEcqnidIs7ReYJFVzWdd6fXJYUM8ixcQcJRGTka/b3saV0KflYhyVJXKhb947GndU35SxYNResQ==}
     engines: {node: '>= 10.0.0', npm: '>= 3.0.0'}
 
-  sonner@2.0.5:
-    resolution: {integrity: sha512-YwbHQO6cSso3HBXlbCkgrgzDNIhws14r4MO87Ofy+cV2X7ES4pOoAK3+veSmVTvqNx1BWUxlhPmZzP00Crk2aQ==}
+  sonner@2.0.7:
+    resolution: {integrity: sha512-W6ZN4p58k8aDKA4XPcx2hpIQXBRAgyiWVkYhT7CvK6D3iAu7xjvVyhQHg2/iaKJZ1XVJ4r7XuwGL+WGEK37i9w==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
       react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
@@ -11491,7 +11491,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m):
+  drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.879.0
       '@cloudflare/workers-types': 4.20250904.0
@@ -11522,9 +11522,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.8.3(drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m))(zod@4.1.5):
+  drizzle-zod@0.8.3(drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e))(zod@4.1.5):
     dependencies:
-      drizzle-orm: 0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m)
+      drizzle-orm: 0.44.5(2bc7918758475f68a365a78f917f3a1e)
       zod: 4.1.5
 
   dunder-proto@1.0.1:
@@ -14106,7 +14106,7 @@ snapshots:
       smart-buffer: 4.2.0
     optional: true
 
-  sonner@2.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  sonner@2.0.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
