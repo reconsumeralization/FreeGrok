@@ -159,8 +159,8 @@ importers:
         specifier: latest
         version: 0.30.1(typescript@5.8.3)
       ai:
-        specifier: ^4.2.8
-        version: 4.3.16(react@19.1.0)(zod@4.1.5)
+        specifier: ^4.3.19
+        version: 4.3.19(react@19.1.0)(zod@4.1.5)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.21(postcss@8.5.6)
@@ -199,10 +199,10 @@ importers:
         version: 0.31.4
       drizzle-orm:
         specifier: latest
-        version: 0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m)
+        version: 0.44.5(2bc7918758475f68a365a78f917f3a1e)
       drizzle-zod:
         specifier: latest
-        version: 0.8.3(drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m))(zod@4.1.5)
+        version: 0.8.3(drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e))(zod@4.1.5)
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
@@ -3247,8 +3247,8 @@ packages:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
     engines: {node: '>=8'}
 
-  ai@4.3.16:
-    resolution: {integrity: sha512-KUDwlThJ5tr2Vw0A1ZkbDKNME3wzWhuVfAOwIvFUzl1TPVDFAXDFTXio3p+jaKneB+dKNCvFFlolYmmgHttG1g==}
+  ai@4.3.19:
+    resolution: {integrity: sha512-dIE2bfNpqHN3r6IINp9znguYdhIOheKW2LDigAMrgt/upT3B8eBGPSCblENvaZGoq+hxaN9fSMzjWpbqloP+7Q==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18 || ^19 || ^19.0.0-rc
@@ -10692,7 +10692,7 @@ snapshots:
       clean-stack: 2.2.0
       indent-string: 4.0.0
 
-  ai@4.3.16(react@19.1.0)(zod@4.1.5):
+  ai@4.3.19(react@19.1.0)(zod@4.1.5):
     dependencies:
       '@ai-sdk/provider': 1.1.3
       '@ai-sdk/provider-utils': 2.2.8(zod@4.1.5)
@@ -11491,7 +11491,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m):
+  drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e):
     optionalDependencies:
       '@aws-sdk/client-rds-data': 3.879.0
       '@cloudflare/workers-types': 4.20250904.0
@@ -11522,9 +11522,9 @@ snapshots:
       sql.js: 1.13.0
       sqlite3: 5.1.7
 
-  drizzle-zod@0.8.3(drizzle-orm@0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m))(zod@4.1.5):
+  drizzle-zod@0.8.3(drizzle-orm@0.44.5(2bc7918758475f68a365a78f917f3a1e))(zod@4.1.5):
     dependencies:
-      drizzle-orm: 0.44.5(ozfhbhuzu64qh2y4nr7akcsg5m)
+      drizzle-orm: 0.44.5(2bc7918758475f68a365a78f917f3a1e)
       zod: 4.1.5
 
   dunder-proto@1.0.1:
