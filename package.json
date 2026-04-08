@@ -72,7 +72,7 @@
     "date-fns": "^4.1.0",
     "dotenv": "^16.6.1",
     "drizzle-kit": "latest",
-    "drizzle-orm": "latest",
+    "drizzle-orm": "^0.45.2",
     "drizzle-zod": "latest",
     "embla-carousel-react": "8.5.2",
     "expo-sqlite": "latest",
