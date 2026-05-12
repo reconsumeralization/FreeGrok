@@ -80,7 +80,7 @@
     "gel": "latest",
     "input-otp": "1.4.2",
     "knex": "latest",
-    "kysely": "latest",
+    "kysely": "^0.28.17",
     "lucide-react": "^0.485.0",
     "mysql2": "latest",
     "nanoid": "latest",
