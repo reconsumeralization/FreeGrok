@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.3.4",
-    "@auth/core": "latest",
+    "@auth/core": "^0.41.3",
     "@auth/drizzle-adapter": "latest",
     "@aws-sdk/client-rds-data": "latest",
     "@cloudflare/workers-types": "latest",
