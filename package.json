@@ -91,7 +91,7 @@
     "path": "latest",
     "pg": "latest",
     "pg-native": "latest",
-    "postcss": "latest",
+    "postcss": "^8.5.22",
     "postgres": "latest",
     "prisma": "latest",
     "react": "^19",
