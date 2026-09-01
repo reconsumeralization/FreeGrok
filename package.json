@@ -82,7 +82,7 @@
     "knex": "latest",
     "kysely": "latest",
     "lucide-react": "^0.485.0",
-    "mysql2": "latest",
+    "mysql2": "^3.24.2",
     "nanoid": "latest",
     "next": "15.5.2",
     "next-auth": "latest",
